@@ -21,34 +21,6 @@ namespace McRest
                 Console.ReadLine();
                 host.Stop();
             }
-            //WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http://localhost:8000/"));
-            //try
-            //{
-            //    ServiceEndpoint ep = host.AddServiceEndpoint(typeof(IService), new WebHttpBinding(), "");
-            //    host.Open();
-            //    using (ChannelFactory<IService> cf = new ChannelFactory<IService>(new WebHttpBinding(), "http://localhost:8000"))
-            //    {
-            //        cf.Endpoint.Behaviors.Add(new WebHttpBehavior());
-
-            //        Console.WriteLine("Endpoints are up and running.");
-            //        Console.WriteLine($"They are available at '{cf.Endpoint.Address}'");
-            //        cf.Endpoint.Contract.Operations.ToList().ForEach(endpoint =>
-            //        {
-            //            Console.WriteLine($"Endpoint: '{endpoint.Name}'");
-            //        });
-            //        Console.WriteLine("");
-            //    }
-
-            //    Console.WriteLine("Press <ENTER> to terminate");
-            //    Console.ReadLine();
-
-            //    host.Close();
-            //}
-            //catch (CommunicationException cex)
-            //{
-            //    Console.WriteLine("An exception occurred: {0}", cex.Message);
-            //    host.Abort();
-            //}
         }
     }
 }
